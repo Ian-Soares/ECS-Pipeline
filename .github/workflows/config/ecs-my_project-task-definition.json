@@ -1,0 +1,49 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:678604849177:task-definition/ecs-my_project:3",
+    "taskRoleArn": "arn:aws:iam::678604849177:role/PRD-ecsTaskRole",
+    "executionRoleArn": "arn:aws:iam::678604849177:role/PRD-ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "my_project",
+            "image": "nginx:latest",
+            "cpu": 1,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "family": "ecs-my_project",
+    "networkMode": "awsvpc",
+    "revision": 3,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
