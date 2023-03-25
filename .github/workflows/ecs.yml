@@ -6,10 +6,10 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: my_project-repository
+  ECR_REPOSITORY: my_project_repository
   ECS_SERVICE: my_project-service 
   ECS_CLUSTER: my_project-PRD
-  ECS_TASK_DEFINITION: ./config/ecs-my_project-task-definition.json
+  ECS_TASK_DEFINITION: .github/workflows/config/ecs-my_project-task-definition.json
   CONTAINER_NAME: my_project
 
 permissions:

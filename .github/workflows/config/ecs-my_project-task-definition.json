@@ -5,7 +5,7 @@
     "containerDefinitions": [
         {
             "name": "my_project",
-            "image": "nginx:latest",
+            "image": "678604849177.dkr.ecr.us-east-1.amazonaws.com/my_project_repository:latest",
             "cpu": 1,
             "portMappings": [
                 {
