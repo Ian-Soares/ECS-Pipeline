@@ -1,3 +1,3 @@
 output "container_image" {
-  value = "nginx:latest"
+  value = aws_ecr_repository.ecr_repository.name
 }
